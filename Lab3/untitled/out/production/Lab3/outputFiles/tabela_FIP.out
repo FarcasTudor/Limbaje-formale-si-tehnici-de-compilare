@@ -1,0 +1,102 @@
+Simbol: int	<->	Code: 2
+Simbol: main	<->	Code: 3
+Simbol: (	<->	Code: 4
+Simbol: )	<->	Code: 5
+Simbol: {	<->	Code: 6
+Simbol: _b34	<->	Code: 1	<->	TS Code: 1010
+Simbol: -80	<->	Code: 0	<->	TS Code: 1001
+Simbol: sum	<->	Code: 1	<->	TS Code: 1021
+Simbol: =	<->	Code: 13
+Simbol: sum	<->	Code: 1	<->	TS Code: 1021
+Simbol: +	<->	Code: 14
+Simbol: i	<->	Code: 1	<->	TS Code: 1016
+Simbol: ;	<->	Code: 9
+Simbol: a	<->	Code: 1	<->	TS Code: 1011
+Simbol: ==	<->	Code: 43
+Simbol: -54	<->	Code: 0	<->	TS Code: 1000
+Simbol: ,	<->	Code: 8
+Simbol: b	<->	Code: 1	<->	TS Code: 1012
+Simbol: =	<->	Code: 13
+Simbol: 4	<->	Code: 0	<->	TS Code: 1008
+Simbol: ;	<->	Code: 9
+Simbol: sum	<->	Code: 1	<->	TS Code: 1021
+Simbol: +=	<->	Code: 45
+Simbol: 20	<->	Code: 0	<->	TS Code: 1007
+Simbol: ;	<->	Code: 9
+Simbol: b34	<->	Code: 1	<->	TS Code: 1013
+Simbol: ;	<->	Code: 9
+Simbol: int	<->	Code: 2
+Simbol: n	<->	Code: 1	<->	TS Code: 1019
+Simbol: =	<->	Code: 13
+Simbol: 5	<->	Code: 0	<->	TS Code: 1009
+Simbol: ,	<->	Code: 8
+Simbol: i	<->	Code: 1	<->	TS Code: 1016
+Simbol: ;	<->	Code: 9
+Simbol: float	<->	Code: 25
+Simbol: ,	<->	Code: 8
+Simbol: sgsgsdgsgum	<->	Code: 1	<->	TS Code: 1020
+Simbol: ,	<->	Code: 8
+Simbol: messi	<->	Code: 1	<->	TS Code: 1018
+Simbol: ,	<->	Code: 8
+Simbol: cmmdc	<->	Code: 1	<->	TS Code: 1014
+Simbol: ;	<->	Code: 9
+Simbol: double	<->	Code: 1	<->	TS Code: 1015
+Simbol: i	<->	Code: 1	<->	TS Code: 1016
+Simbol: ;	<->	Code: 9
+Simbol: sum	<->	Code: 1	<->	TS Code: 1021
+Simbol: =	<->	Code: 13
+Simbol: sum	<->	Code: 1	<->	TS Code: 1021
+Simbol: +	<->	Code: 14
+Simbol: 20	<->	Code: 0	<->	TS Code: 1007
+Simbol: ;	<->	Code: 9
+Simbol: sum	<->	Code: 1	<->	TS Code: 1021
+Simbol: =	<->	Code: 13
+Simbol: 0	<->	Code: 0	<->	TS Code: 1002
+Simbol: ;	<->	Code: 9
+Simbol: std::cin	<->	Code: 41
+Simbol: >	<->	Code: 18
+Simbol: >	<->	Code: 18
+Simbol: n	<->	Code: 1	<->	TS Code: 1019
+Simbol: ;	<->	Code: 9
+Simbol: for	<->	Code: 23
+Simbol: (	<->	Code: 4
+Simbol: i	<->	Code: 1	<->	TS Code: 1016
+Simbol: =	<->	Code: 13
+Simbol: 0	<->	Code: 0	<->	TS Code: 1002
+Simbol: ;	<->	Code: 9
+Simbol: i	<->	Code: 1	<->	TS Code: 1016
+Simbol: <	<->	Code: 17
+Simbol: n	<->	Code: 1	<->	TS Code: 1019
+Simbol: ;	<->	Code: 9
+Simbol: i	<->	Code: 1	<->	TS Code: 1016
+Simbol: =	<->	Code: 13
+Simbol: i	<->	Code: 1	<->	TS Code: 1016
+Simbol: +	<->	Code: 14
+Simbol: 1	<->	Code: 0	<->	TS Code: 1006
+Simbol: )	<->	Code: 5
+Simbol: {	<->	Code: 6
+Simbol: sum	<->	Code: 1	<->	TS Code: 1021
+Simbol: =	<->	Code: 13
+Simbol: sum	<->	Code: 1	<->	TS Code: 1021
+Simbol: +	<->	Code: 14
+Simbol: i	<->	Code: 1	<->	TS Code: 1016
+Simbol: ;	<->	Code: 9
+Simbol: }	<->	Code: 7
+Simbol: mean	<->	Code: 1	<->	TS Code: 1017
+Simbol: =	<->	Code: 13
+Simbol: sum	<->	Code: 1	<->	TS Code: 1021
+Simbol: /	<->	Code: 12
+Simbol: i	<->	Code: 1	<->	TS Code: 1016
+Simbol: ;	<->	Code: 9
+Simbol: std::cout	<->	Code: 42
+Simbol: <	<->	Code: 17
+Simbol: <	<->	Code: 17
+Simbol: mean	<->	Code: 1	<->	TS Code: 1017
+Simbol: ;	<->	Code: 9
+Simbol: return	<->	Code: 22
+Simbol: 0	<->	Code: 0	<->	TS Code: 1002
+Simbol: ;	<->	Code: 9
+Simbol: -	<->	Code: 15
+Simbol: b	<->	Code: 1	<->	TS Code: 1012
+Simbol: ;	<->	Code: 9
+Simbol: }	<->	Code: 7

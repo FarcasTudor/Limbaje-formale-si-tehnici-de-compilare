@@ -1,0 +1,12 @@
+q0 q1 q2 q3 q4 q5
+q0
+q2 q3 q5
+8
+q0 0 q1
+q1 b q2
+q2 binaryDigit q2
+q1 B q3
+q3 binaryDigit q3
+q1 x q4
+q4 hexaDigit q5
+q5 hexaDigit q5

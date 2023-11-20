@@ -1,0 +1,11 @@
+AutomatFinit:
+    stari: Set<String> // starile automatului finit
+    alfabetIntrare: Set<String> //alfabetul automatului finit
+    tranzitii: Set<Tranzitie> //tranzitiile automatului finit
+    stareInitiala: String // starea initiala a automatului finit
+    stariFinale: Set<String> // lista starilor finale ale automatului finit
+
+Tranzitie:
+    stareInitiala: String // starea initiala a tranzitiei
+    stareFinala: String // starea finala a tranzitiei
+    valoare: String // valoarea din alfabet a tranzitiei

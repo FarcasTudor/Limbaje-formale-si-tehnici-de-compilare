@@ -1,0 +1,9 @@
+q0 q1 q2
+q0
+q1 q2
+5
+q0 letter q1
+q1 letter q1
+q1 digit q2
+q2 letter q2
+q2 digit q1

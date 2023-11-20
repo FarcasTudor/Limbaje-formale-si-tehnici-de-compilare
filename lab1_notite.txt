@@ -1,0 +1,30 @@
+<program> -> "void main ( ) {"
+	<instructiuni>
+	"}"
+<instructiuni> -> <instr>; | <instr>; <instructiuni>
+<instr> -> <instr_attr> | <instr_io> | <instr_cond> | <instr_cicl> | <decl>
+
+<decl> -> <tip_data> <list_var> 
+<tip_data> -> "int" | "char" | <tip_user>
+<tip_user> -> (noi decidem ce este acest tip user) ("struct ...")
+	      sau
+	      "int""["<const_nr>"]" | "char""["<const_nr>"]"
+<list_var> -> <var> | <var>","<lista_var> | <var_init> | <var_init>","<lista_var>
+<var> -> [a-z]{1,8}
+<var_init> -> <var>"="<expr>
+<expr> -> <term> | <term><op_aritm><expr> ---varianta naiva but good enough
+<op_aritm> -> "+" | "-" | "*" | "/"
+<term> -> <var> | <const_nr>
+<const_nr> -> _______ (iei definitia asa cum e)
+
+<instr_cond> -> <simple_if> | <if_else>
+<simple_if> -> "if" "(" <list_cond> ")" "{"
+			<instructiuni>
+		"}"
+<if_else> -> <simple_if> "else" "{" <instructiuni> "}"
+<list_cond> -> <cond> | <cond><op_logic><list_cond> (daca pui epsilon, inseamna empty)
+<op_logic> -> "&&" | "||" | "/\"
+<cond> -> <expr><op_rel><expr> | <expr>
+<or_rel> -> "<" | ">" | "==" | "!="
+
+==================================================================
