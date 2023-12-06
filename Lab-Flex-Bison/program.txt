@@ -1,0 +1,15 @@
+int main() {
+	cin>>a;
+	if(a == 5 && b == 10 || c ==10) {
+		b=5;
+	}
+	int a , b , c ;
+	cin >> a ;
+	a = 1.32 ;
+	b = a + 2 ;
+	do { 
+		a = a + 1 ; 
+	} while(a > b) 
+	cout << b ;
+	afloat dd;
+}

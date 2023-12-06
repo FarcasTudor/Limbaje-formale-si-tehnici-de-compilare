@@ -1,0 +1,44 @@
+<program_principal> -> "void main() {" <bloc_instr> "}"
+<bloc_instr> -> <instr> ";" | <instr> ";" <bloc_instr>
+<instr> -> <decl_tip_data> | <instr_decl> | <instr_attr> | <instr_intrare> | <instr_iesire> | <instr_cond> | <instr_cicl>
+
+<instr_decl> -> <tip_data> " " <lista_var> ";"
+<tip_data> -> "int" | "float" | "struct"
+<lista_var> -> <var> | <var> "," <lista_var>
+<var> -> [a-zA-Z]{1,8} | [a-zA-Z]{1,8} "." [a-z]{1,8} // pt struct
+
+<decl_tip_data> -> "struct" <var> "{" <lista_campuri> "};"
+<lista_campuri> -> <camp> ";" | <camp> ";" <lista_campuri>
+<camp> -> <tip_data> " " <var>
+
+<instr_attr> -> <var> "=" <val_int> | <val_float> | <expr> ";"
+<val_int> -> [-2,147,483,648 - 2,147,483,647]
+<val_float> -> [-3.4 x 10^38 - 3.4 x 10^38]
+
+<instr_intrare> -> "std::cin>>" <lista_var_intrare> ";"
+<lista_var_intrare> -> <var> | <var> ">>" <lista_var_intrare>
+
+<instr_iesire> -> "std::cout" <mesaj_iesire> ";" | "std::cout" <mesaj_iesire> <lista_var_iesire> <mesaj_iesire> ";"
+<mesaj_iesire> -> "<<" [a-zA-Z0-9,.!?/= ]*
+<lista_var_iesire> -> "<<" <var> <mesaj_iesire> | "<<" <var> <mesaj_iesire> "<<" <lista_var_iesire>
+
+<instr_cond> -> "if(" <lista_cond> ") {" <bloc_instr> "}"
+<lista_cond> -> <cond> | <cond> <op_logic> <lista_cond>
+<op_logic> -> "&&" | "||"
+<cond> -> <expr> <op_rel> <expr> | <expr>
+<or_rel> -> "<" | ">" | "==" | "!="
+<expr> -> <term> | <term> <op_aritm> <expr>
+<op_aritm> -> "+" | "-" | "*" | "/"
+<term> -> <var> | <const_nr>
+<const_nr> -> "const_int" | "const_float"
+
+<instr_cicl> -> <instr_for> | <instr_while> | <instr_do_while>
+<instr_for> -> "for(" <instr_attr> ";" <cond> ";" <incrementare_decrementare> ") {" <bloc_instr> "}"
+<incrementare_decrementare> -> <var> "=" <expr>
+
+<instr_while> -> "while(" <lista_cond> ") {" <bloc_instr> "}"
+<instr_do_while> -> "do {" <bloc_instr> "} while(" <lista_cond> ");"
+
+
+
+

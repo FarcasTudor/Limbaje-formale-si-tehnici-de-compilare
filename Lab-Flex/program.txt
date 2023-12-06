@@ -1,0 +1,25 @@
+int main() { 
+    $
+    0b1 = 5
+    0xAF
+    sum != sum+ i ;
+    a == -54, b=4;
+    sum += 20 ;
+    b34;
+    int n=5 , i ;
+    float , messi , cmmdc ;
+    double i ;  
+    sum=sum+ 20 ;
+    sum = 0 ;
+    std::cin >> n ;
+    for ( i = 0; i<=n; i = i + 1 ) {
+        sum = sum + i ;
+    }
+    mean = sum / i ;
+    std::cout << mean ;
+    return 0 ;
+    @
+    daca labFlex == predatCuSucces atunci
+        nota = 10
+    sfdaca
+}

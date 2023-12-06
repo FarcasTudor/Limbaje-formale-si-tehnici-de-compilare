@@ -1,0 +1,16 @@
+%{
+#include "lab4.tab.h"
+int counter=0;
+%}
+
+%option noyywrap
+
+%%
+
+"("     { counter++; return LEFT_PR; }
+")"     { counter--; return RIGHT_PR; }
+[0-9]+  { return NUMBER; }
+"+"     { return PLUS; }
+.       { }
+%%
+
