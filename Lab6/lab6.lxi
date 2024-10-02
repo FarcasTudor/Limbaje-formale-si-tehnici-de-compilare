@@ -1,0 +1,42 @@
+%{
+#include <stdio.h>
+#include <string.h>
+#include "lab6.tab.h"
+
+#define YY_DECL int yylex()
+
+int currentLine = 1;
+%}
+
+%option noyywrap
+
+DIGIT 		[0-9] 
+ID 		[a-z][a-z0-9]*
+
+%%
+main		{ return MAIN; }
+int	{ return DATA_TYPE; }
+cin		    { return CIN; }
+cout		{ return COUT; }
+"{"		    { return LCB; }
+"}"		    { return RCB; }
+"(" 		{ return LPR; }
+")" 		{ return RPR; }
+";" 		{ return SEMICOLON; }
+"," 		{ return COMMA; }
+"="		{ return ASSIGN; }
+">>"		{ return DG; }
+"<<"		{ return DL; }
+"+" 		{ yylval.value = strdup(yytext); return PLUS; }
+"-"		{ yylval.value = strdup(yytext); return MINUS; }
+"*" 		{ yylval.value = strdup(yytext); return MUL; }
+"/"         { yylval.value = strdup(yytext); return DIV; }
+{DIGIT}|{DIGIT}{DIGIT}* 	{ yylval.value = strdup(yytext); return CONST;}
+{ID}		{ yylval.value = strdup(yytext); return ID; }
+
+[\n] 		{ currentLine++; }
+
+[ \t\n]+ ;
+
+
+%% 
